@@ -9,13 +9,16 @@ export async function getAllNotes(req, res) {
   }
 }
 
-export function createNote(req, res) {
-  res.status(200).send("you got 20 notes");
-}
-export const updateNote = (req, res) => {
-  res.status(200).json({ message: "Note Updated Successfully!!" });
-};
+export async function createNote(req, res) {
+  // res.status(200).send("you got 20 notes");
 
-export const deleteNote = (req, res) => {
+  try {
+  } catch (error) {}
+}
+export async function updateNote(req, res) {
+  res.status(200).json({ message: "Note Updated Successfully!!" });
+}
+
+export async function deleteNote(req, res) {
   res.status(200).json({ message: "Note Deleted Successfully!!" });
-};
+}
